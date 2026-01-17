@@ -1,17 +1,52 @@
 package Arrrays;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Arrayss arr= new Arrayss();
+        int []numbers={1,2,4,7,6,9,5};
+        Arrays.sort(numbers);
+        //int result=arr.LinearSearch(numbers,9);
+        int result=arr.BinarySearch(numbers, 0, numbers.length-1, 9);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        if(result!=-1)
+            System.out.println("Value Found at index:"+result);
+        else
+            System.out.println("Not found!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Scanner scanner =new Scanner(System.in);
+//        int []numbers=new int[5];
+
+        //arr.input(numbers);
+        // arr.revers_traversal(numbers);
+        // arr.update(numbers,4,7);
+        //arr.traversal(numbers);
+        //arr.update(numbers,2,6);
+        //arr.delete(numbers,2);
+        //arr.ShiftLeft_Delete(numbers,2);
+
+        //.traversal(numbers);
+
+
+
+
+        //   System.out.println(Arrays.toString(numbers));
+//        for(int num:numbers)
+//            System.out.println(num);
+
     }
 }
